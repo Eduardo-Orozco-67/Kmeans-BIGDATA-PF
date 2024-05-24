@@ -23,3 +23,29 @@ El dashboard permite a los usuarios explorar los datos de los consumidores, segm
    ```bash
    git clone https://github.com/Eduardo-Orozco-67/Kmeans-BIGDATA-PF.git
    cd Kmeans-BIGDATA-PF
+
+2. Instalamos las dependencias a usar
+   ```bash
+   pip install -r requirements.txt
+
+3. Ejecucion del proyecto
+   ```bash
+    shiny run main.py
+Abre tu navegador web y navega a http://127.0.0.1:8000.
+
+## Componentes Clave
+
+### Método del Codo
+
+El Método del Codo ayuda a determinar el número óptimo de clusters (k) para el clustering de K-means al graficar la Suma de Cuadrados Dentro del Cluster (WCSS) contra el número de clusters. El punto de "codo" indica el valor óptimo de k.
+
+### Clustering de K-means
+
+El clustering de K-means se utiliza para segmentar a los consumidores en clusters basados en su edad, ingreso anual y puntaje de gasto. Los clusters ayudan a identificar patrones y comportamiento de los consumidores.
+
+### Métricas del Dashboard
+
+- **Número de Consumidores en Línea**: Muestra el número total de consumidores en línea.
+- **Edad Promedio para Pago en Efectivo**: Muestra la edad promedio de los consumidores que usan efectivo.
+- **Edad Promedio para Ingresos Altos**: Muestra la edad promedio de los consumidores con un ingreso anual mayor a $20,000.
+- **Método de Pago Preferido**: Identifica el método de pago más frecuentemente utilizado entre los consumidores.
